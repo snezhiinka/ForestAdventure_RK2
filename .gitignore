@@ -1,0 +1,24 @@
+# Unity temporary files
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]serSettings/
+/[Mm]emoryCaptures/
+
+# Exported iOS builds
+/MagicForest_iOS/
+/MagicForest_iOS_BackupThisFolder_ButDontShipItWithYourGame/
+
+# macOS and IDE files
+.DS_Store
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.user
+/MagicForest_iOS_BackUpThisFolder_ButDontShipItWithYourGame/
