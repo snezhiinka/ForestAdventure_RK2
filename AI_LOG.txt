@@ -1,0 +1,81 @@
+MAGIC FOREST — AI ASSISTANCE LOG
+Assignment 8–9 | 05 November 2026
+Project repository: https://github.com/snezhiinka/ForestAdventure_RK2
+
+PURPOSE
+This document discloses how conversational AI tools helped with learning,
+planning, code explanation, UI artwork, debugging and GitHub documentation.
+This is a summary of the student’s project conversations, not a verbatim
+transcript. AI suggestions were reviewed and implemented manually in Unity.
+
+1) GAME PLANNING AND UI FLOW (October–November 2026)
+Tool: ChatGPT (conversational assistance)
+Request summary: Plan screens and flow for the existing Magic Forest game,
+including Main Menu, HUD, Pause, Continue, Restart and Main Menu buttons.
+AI contribution: Suggested interface structure and Unity setup steps.
+Student action: Built and arranged the interface objects in Unity; assigned
+button callbacks and tested them in Play Mode.
+
+2) PAUSE GAME C# LOGIC (November 2026)
+Tool: ChatGPT
+Request summary: Explain the existing GameManager2D script and add a simple
+pause system without changing working win/lose and level-transition logic.
+AI contribution: Proposed a pausePanel GameObject field and PauseGame()/
+ContinueGame() functions using Time.timeScale.
+Student action: Added code to the existing Unity project, connected scene
+references and verified Pause, Continue, Restart and Main Menu buttons.
+
+3) FANTASY UI BUTTON ARTWORK (October–November 2026)
+Tool: ChatGPT image generation
+Request summary: Create floral fantasy buttons to match existing menu art,
+with labels CONTINUE, RESTART and MAIN MENU; also a matching pause icon.
+AI contribution: Rendered decorative button image assets.
+Student action: Imported images into Assets/Art, created UI Buttons, set up
+Rect Transform settings, and manually connected On Click() actions.
+
+4) RESPONSIVE UI AND DEVICE TESTING (November 2026)
+Tool: ChatGPT
+Request summary: Troubleshoot disappearing or drifting joystick, JUMP, FIRE,
+heart indicators and pause controls across notched iPhone and tablet sizes.
+AI contribution: Explained Canvas Scaler, anchors, Safe Area and UI position
+changes; suggested testing across three aspect ratios.
+Student action: Adjusted anchors/layout, tested in Device Simulator and
+shared screenshots of results. Final compliance with the exact assigned
+1920x1080 / Match=1 scaler settings still requires rechecking.
+
+5) CAMERA FRAMING (November 2026)
+Tool: ChatGPT
+Request summary: Show enough game world on a 4:3 tablet without ruining the
+framing on a wide iPhone screen.
+AI contribution: Proposed an AutoCameraSize script based on Camera.aspect
+and orthographicSize.
+Student action: Created and attached the script, tested framing, and adjusted
+background visuals when needed.
+
+6) GIT AND COLLABORATION (November 2026)
+Tool: ChatGPT
+Request summary: Explain Git initialization, .gitignore, commit/push,
+feature branches, pull requests and collaborator invitations.
+AI contribution: Supplied step-by-step terminal commands and GitHub UI help.
+Student action: Created/pushed the Unity repository; merged the mobile-ui
+feature branch via PR #1; accepted a second account as collaborator and
+committed REVIEW_NOTES.md from that account.
+
+7) DOCUMENTATION (05 November 2026)
+Tool: ChatGPT
+Request summary: Draft a concise GDD with the instructor’s ten required
+parts and produce an AI-use log.
+AI contribution: Drafted GDD text, this disclosure log and README wording.
+Student action: Must read, correct any project-specific inaccuracies and
+upload the final files to GitHub/Canvas.
+
+AUTHENTICITY AND LIMITS
+- The project was edited, saved and tested by the student in the Unity editor.
+- The assistance described above is conversational; it is not a record of
+  an AI coding agent autonomously editing the project.
+- Some suggestions included code examples. The student must confirm that
+  copied AI code remains within the course's maximum allowed percentage.
+- No independent mobile-device installation/build test is claimed.
+- Screenshots and Git history provide evidence of the student's work.
+- If the instructor requires exact prompts/outputs, refer to the original
+  chat history and append screenshots or transcripts; this log is summarized.
