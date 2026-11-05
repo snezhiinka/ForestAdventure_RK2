@@ -9,6 +9,7 @@ public class GameManager2D : MonoBehaviour
     public GameObject bossBar;
     public GameObject gameHUD;
     public string nextLevelName;
+    public GameObject pausePanel;
 
     private bool gameEnded = false;
 
@@ -18,6 +19,11 @@ public class GameManager2D : MonoBehaviour
 
         winPanel.SetActive(false);
         losePanel.SetActive(false);
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+        }
+
     }
 
     public void WinGame()
@@ -60,6 +66,24 @@ public class GameManager2D : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+
+    public void PauseGame()
+    {
+        if (gameEnded || pausePanel == null) return;
+
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ContinueGame()
+    {
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+        }
+
+        Time.timeScale = 1f;
+    }
     public void PlayAgain()
     {
         Time.timeScale = 1f;
