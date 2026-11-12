@@ -521,6 +521,7 @@ MonoBehaviour:
   coinSound: {fileID: 8300000, guid: 67d6e91e70bbe4044a036a9f21916bae, type: 3}
   gameManager: {fileID: 2121627672}
   canJump: 1
+  useThreeLives: 0
 --- !u!82 &244351963
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4606,7 +4607,7 @@ MonoBehaviour:
   losePanel: {fileID: 425294667}
   bossBar: {fileID: 0}
   gameHUD: {fileID: 32346537}
-  nextLevelName: Forest_Level3
+  nextLevelName: Forest_Level2_A10
   pausePanel: {fileID: 212440133}
 --- !u!1001 &2139562206
 PrefabInstance:

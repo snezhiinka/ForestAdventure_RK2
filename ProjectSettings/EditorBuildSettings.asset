@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main menu.unity
-    guid: beb574f8bdaad4bce9ddb26a48a79404
+    path: Assets/Scenes/Forest_Level2_A10.unity
+    guid: 6e2058577d6134800b1d1c1912f88053
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: beb574f8bdaad4bce9ddb26a48a79404
   - enabled: 0
     path: Assets/Scenes/Level 1.unity
     guid: fd252f240b2ab441ba00520d7a314fab
@@ -32,13 +35,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Level2_Survival.unity
     guid: 51ba2df08f2b14c7b860c4318a767378
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Forest_Level1.unity
     guid: ccd02e08db3eb4395a61d64b4afb0c47
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Forest_Level2.unity
     guid: 4b8e36f65849a48298e3ec9ffeebca1d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Forest_Level3.unity
     guid: 9ab77df09c60e4b48b2b2de68b16071b
   m_configObjects:

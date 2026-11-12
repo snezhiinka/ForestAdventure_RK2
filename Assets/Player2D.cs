@@ -13,6 +13,7 @@ public class Player2D : MonoBehaviour
     public GameManager2D gameManager;
 
     public bool canJump = true;
+    public bool useThreeLives = false;
 
     private bool onGround;
 
@@ -27,6 +28,9 @@ public class Player2D : MonoBehaviour
 
     private int coins;
     private int coinsTotal;
+    private Health health;
+    private Vector3 startPosition;
+
 
     public bool HasAllCoins()
     {
@@ -53,6 +57,9 @@ public class Player2D : MonoBehaviour
     {
         // Count all coins in the scene
         coinsTotal = GameObject.FindGameObjectsWithTag("Coin").Length;
+        health = GetComponent<Health>();
+        startPosition = transform.position;
+    
     }
 
     void FixedUpdate()
@@ -109,18 +116,33 @@ public class Player2D : MonoBehaviour
             );
         }
 
+
         if (transform.position.y < fallLimit)
         {
-            gameManager.LoseGame();
+            if (useThreeLives && health != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+                transform.position = startPosition;
+                health.TakeDamage(1);
+            }
+            else
+            {
+                gameManager.LoseGame();
+            }
         }
+
     }
+
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Game over");
-            gameManager.LoseGame();
+            if (!useThreeLives)
+            {
+                Debug.Log("Game over");
+                gameManager.LoseGame();
+            }
         }
     }
 

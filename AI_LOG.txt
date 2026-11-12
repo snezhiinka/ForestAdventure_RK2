@@ -1,0 +1,33 @@
+# AI_LOG.txt — Week 10 Enemy AI
+
+**Project:** Forest Adventure  
+**Assignment:** Week 10 — Enemy AI  
+**Date:** November 11–12, 2026
+
+## AI Tool Used
+ChatGPT (OpenAI)
+
+## Purpose
+I used ChatGPT as a learning assistant to understand finite state machines (FSM), Raycast detection, enemy movement, attacks, and cooldown systems in Unity.
+
+## AI Assistance
+- Received code suggestions for Patroller, Shooter, Charger, and projectile mechanics.
+- Used explanations to understand Patrol, Chase, Attack, and Recovery states.
+- Received guidance for camera movement, Unity Inspector settings, and sprite animations.
+- Used ChatGPT to investigate compilation and gameplay problems.
+
+## Problems and Solutions
+A modification to PatrollerA10.cs caused compilation errors because several methods were nested incorrectly. I corrected the structure and tested the script in Unity.
+
+I also adjusted enemy positions, platforms, animation settings, and gameplay parameters during development.
+
+## Testing
+Two players tested the game on an iPhone.
+
+- Player 1: 4 attempts; Shooter was difficult.
+- Player 2: 4 attempts; Shooter was difficult and the joystick was uncomfortable.
+
+The feedback was used to evaluate the difficulty and plan balance adjustments.
+
+## AI Code Disclosure
+ChatGPT provided substantial initial code for the enemy AI scripts. The suggested code was integrated, configured, debugged, and tested in Unity. The amount of AI-generated code must be checked against the assignment's 90% limit.
